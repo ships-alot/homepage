@@ -1,19 +1,25 @@
 const App = () => {
   return (
-    <div className="w-screen">
+    <div className="w-screen h-screen">
       <Header />
-      <Projects />
+      <Contact />
     </div>
   )
 }
 
-const Projects = () => <div>Projects</div>
+const Contact = () => (
+  <iframe
+    className="flex w-full h-full"
+    src="https://calendly.com/marcello-chiaramonte"
+  ></iframe>
+)
 
 const Header = () => (
   <div className="w-full">
-    <div className="flex h-16 items-center pl-4">
-      <div>Name Lastname</div>
-      <div>CXO</div>
+    <div className="flex flex-col place-content-center h-16 items-center">
+      <div>Marcello Chiaramonte</div>
+      <div className="w-2"></div>
+      <div>Senior Fullstack Developer</div>
     </div>
     <div className="h-0.5 bg-sky-600"></div>
   </div>
